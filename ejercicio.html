@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal - MiApp</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ff6f91;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe6ea;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 70vh;
+      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      color: #e91e63;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+    }
+
+    .hero button {
+      padding: 12px 30px;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #d81b60;
+      transform: scale(1.05);
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 50px 20px;
+      background: white;
+    }
+
+    .feature-card {
+      background: #fff0f6;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+      margin: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      margin: 10px 0;
+      color: #ff4081;
+    }
+
+    /* CTA */
+    .cta {
+      background: #ff6f91;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta button {
+      padding: 12px 25px;
+      background: white;
+      color: #ff6f91;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover {
+      background: #ffe6ea;
+    }
+
+    /* Galería */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 40px 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Testimonios */
+    .testimonials {
+      padding: 50px 20px;
+      background: #fff0f6;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      margin-bottom: 20px;
+      color: #e91e63;
+    }
+
+    .testimonial {
+      max-width: 400px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menú superior -->
+  <header>
+    <h1>MiApp</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Juegos</a>
+      <a href="#">Aprendizaje</a>
+      <a href="#">Perfil</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>¡Explora y aprende jugando!</h2>
+    <p>Actividades divertidas, seguras y educativas</p>
+    <button>Comenzar ahora</button>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-card">
+      🎨
+      <h3>Aprende jugando</h3>
+      <p>Juegos que combinan diversión y aprendizaje.</p>
+    </div>
+    <div class="feature-card">
+      📚
+      <h3>Contenido seguro</h3>
+      <p>Hecho especialmente para niños.</p>
+    </div>
+    <div class="feature-card">
+      🌟
+      <h3>Explora más</h3>
+      <p>Nuevos retos cada semana.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>¡Empieza tu aventura hoy mismo!</h2>
+    <button>Unirme ahora</button>
+  </section>
+
+  <!-- Galería -->
+  <section class="gallery">
+    <img src="https://placekitten.com/400/250" alt="Ejemplo 1">
+    <img src="https://placekitten.com/401/250" alt="Ejemplo 2">
+    <img src="https://placekitten.com/402/250" alt="Ejemplo 3">
+    <img src="https://placekitten.com/403/250" alt="Ejemplo 4">
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <h2>Lo que dicen nuestros usuarios</h2>
+    <div class="testimonial">“Mi hijo aprendió muchísimo jugando aquí. ¡Recomendado!” – Mamá de Luis</div>
+    <div class="testimonial">“Es muy divertido, me encantan los retos nuevos.” – Sofía, 9 años</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MiApp - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
